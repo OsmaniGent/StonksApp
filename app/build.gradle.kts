@@ -33,6 +33,8 @@ android {
 
 dependencies {
 
+    val room_version = "2.6.1"
+
     implementation(libs.appcompat)
     implementation(libs.material)
     implementation(libs.constraintlayout)
@@ -44,4 +46,11 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
+    implementation("androidx.room:room-runtime:$room_version")
+    annotationProcessor("androidx.room:room-compiler:$room_version")
+    implementation("com.github.bumptech.glide:glide:4.14.1")
+    annotationProcessor("com.github.bumptech.glide:compiler:4.14.1")
+    implementation("androidx.cardview:cardview:1.0.0")
+    implementation("com.github.PhilJay:MPAndroidChart:v3.1.0")
+    implementation("com.google.android.material:material:1.2.1")
 }

@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -22,6 +23,22 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".StockDetailActivity"
+            android:exported="true"
+            android:parentActivityName=".MainActivity"
+            android:label="Details">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.stonks.MainActivity" />
+
+        </activity>
+        <activity
+            android:name=".WatchlistActivity"
+            android:exported="true"
+            android:parentActivityName=".MainActivity"
+            android:label="Watchlist">
         </activity>
     </application>
 

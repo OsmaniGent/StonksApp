@@ -11,6 +11,7 @@ lifecycleViewmodelKtx = "2.7.0"
 navigationFragment = "2.7.7"
 navigationUi = "2.7.7"
 volley = "1.2.1"
+room = "2.4.3"
 
 [libraries]
 junit = { group = "junit", name = "junit", version.ref = "junit" }
@@ -24,6 +25,10 @@ lifecycle-viewmodel-ktx = { group = "androidx.lifecycle", name = "lifecycle-view
 navigation-fragment = { group = "androidx.navigation", name = "navigation-fragment", version.ref = "navigationFragment" }
 navigation-ui = { group = "androidx.navigation", name = "navigation-ui", version.ref = "navigationUi" }
 volley = { group = "com.android.volley", name = "volley", version.ref = "volley" }
+room-runtime = { module = "androidx.room:room-runtime", version.ref = "room" }
+room-compiler = { module = "androidx.room:room-compiler", version.ref = "room" }
+room-ktx = { module = "androidx.room:room-ktx", version.ref = "room" }
+
 
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }
